@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品详情页 · 邱怡青</title>
+    <meta
+      name="description"
+      content="邱怡青作品详情页。左侧中文介绍和基本信息，右侧高度错落的画廊排版，支持滚轮横向滑动。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="detail">
+    <a class="skip" href="#detail-shell">跳到详情内容</a>
+    <main id="detail-shell" class="detail-shell" aria-label="作品详情页">
+      <div class="detail-track" id="detail-track">
+        <section class="detail-panel detail-intro">
+          <div class="info-panel">
+            <div>
+              <p class="detail-kicker">作品详情页 / Live Project</p>
+              <h1 id="detail-title"></h1>
+              <p class="detail-desc" id="detail-desc"></p>
+            </div>
+            <div class="detail-facts" id="detail-facts"></div>
+            <div>
+              <p class="detail-desc" id="detail-fit"></p>
+              <div class="hero-actions">
+                <a class="button" href="index.html">Back to Portfolio</a>
+                <a class="button secondary" id="detail-live" href="index.html#works">View Works</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-panel detail-gallery">
+          <div class="gallery-stage">
+            <div class="gallery-title">
+              <div>
+                <p class="eyebrow">Highly Staggered Cards</p>
+                <h2 id="gallery-heading"></h2>
+              </div>
+              <p id="gallery-copy"></p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
